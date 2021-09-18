@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font.css">
+    <title>HIVE ACADEMICO</title>
+    
+</head>
+
+<body>
+
+    
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            max-width: 1400px;
+            min-width: 375px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            color: #222222;
+        }
+
+        .header-section {
+            margin-bottom: 100px;
+            
+        }
+
+        .header-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+            
+        }
+
+        .site-title {
+            width: 30%;
+        }
+
+        .site-nav {
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: #04009A;
+            size: 30pt;
+        }
+
+        .site-nav>a {
+            color: inherit;
+            text-decoration: none;
+            
+        }
+
+        .site-nav>a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+            
+        }
+
+        .logo-container {
+            width: 30%;
+        }
+
+        .logo-container__site-logo {
+            height: 80px;
+        }
+
+        .banner {
+            width: 100%;
+        }
+
+        .banner>img {
+            width: 100%;
+            height: 400px;
+            max-width: 1400px;
+            object-fit: cover;
+        }
+
+        .services-section{
+            display: flex;
+            margin-bottom: 100px;
+        }
+        .seccion-noticias{
+            display: flex;
+            margin-bottom: 100px;
+        }
+        .seccion-equipo {
+            display: flex;
+            margin-bottom: 100px;
+        }
+
+        .seccion-noticias,
+        .header-container{
+            background-color: #f7f7f7
+
+        }
+
+        .seccion-noticias {
+            flex-wrap: wrap;
+        }
+
+        .services-info {
+            width: 33%;
+            padding: 20px;
+            text-align: center;
+            
+        }
+
+        .news-info {
+            width: 50%;
+            padding: 30px;
+            text-align: justify;
+        }
+
+        .news-header {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .news-info__title {
+            align-self: center;
+        }
+
+        .seccion-pie {
+            background-color: #25294f;
+            height: 300px;
+            display: flex;
+            color: white;
+            justify-content: space-evenly;
+        }
+
+        .services-info__imagen {
+            border-radius: 50%;
+            margin-right: auto;
+            margin-left: auto;
+            width: 250px;
+            height: 250px;
+        }
+
+        .team-info1{
+            width: 25%;
+            padding: 15px;
+            text-align: center;
+            background-color: rgb(212, 228, 245);
+        }
+
+        .team-info2{
+            width: 25%;
+            padding: 15px;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .team-info__imagen{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .bt_servicios{
+            text-decoration: none;
+            padding: 3px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-family: helvetica;
+            font-weight: 300;
+            font-size: 20px;
+            
+            color: #ffffff;
+            background-color:  #04009A;
+            border-radius: 10px;
+            border: 3px double #092a97;
+        }
+        .boton_1:hover{
+            opacity: 0.6;
+            text-decoration: none;
+        }
+
+ 
+
+    </style>    
+
+<!-- inicio encabezado del sitio -->
+    <div id="#" class="header-section">
+        <div class="header-container">
+
+            <div class="site-title">
+                <h1>HIVE</h1>
+            </div>
+            
+            <!-- Inicio menú navegación -->
+            <ul class="site-nav">
+                <a href="#">Inicio</a>
+                <a href="#services">Servicios</a>
+                <a href="#news">Noticias</a>
+                <a href="#team">Nuestro equipo</a>
+            </ul>
+            <!-- Fin menú navegación -->
+
+            
+            
+            <div class="logo-container">
+                <img class="logo-container__site-logo" src="./logohive.png" alt="Logo Hive">
+            </div>
+        </div>
+            
+        <div class="banner">
+            <img src="./banner.jpg" alt="A banner image">
+        </div>
+    </div>
+<!-- fin encabezado del sitio -->
+
+
+
+
+    <!-- inicio contenido principal -->
+    <div>
+
+
+        <h1 id="services" >Servicios</h1>
+        <!-- inicio sección de servicios -->
+        <section  class="services-section">
+            
+            <article class="services-info">
+                <img class="services-info__imagen" src="./gestion de tareas.png" alt="" >
+                <h2 class="services-info__title">Gestion de Tareas</h2>
+                <p class="services-info__text">
+                    Este tipo de gestión consiste en un proceso en el cual, el docente supervisa las tareas de sus estudiantes en un tema determinado, a través de una o varias etapas, se podrá evaluar la evolución de estudiante respecto al tema. Es una metodología que permite tomar decisiones oportunas y adoptar cambios rápidos frente a los método de enseñanza.
+                </p>
+                <a href="#services" class="bt_servicios">Ver mas</a>
+            </article>
+            <article class="services-info">
+                <img class="services-info__imagen" src="./calificaciones.png" alt="" >
+                <h2 class="services-info__title">Control de Calificaciones</h2>
+                <p class="services-info__text">
+                    Este sistema de control de calificaciones, permite a profesores, estudiantes y padres de familia el monitoreo constante de notas, con el finde hacer seguimiento al desempeño de cada estudiante, es decir se podrán visualizar promedio, porcentajes y validación de notas.
+                </p>
+                <br>
+                <br>
+                <a href="#services" class="bt_servicios">Ver mas</a>
+            </article>
+            <article class="services-info">
+                <img class="services-info__imagen" src="./planmejoramiento.png" alt="">
+                <h2 class="services-info__title">Plan de Mejoramiento</h2>
+                <p class="services-info__text">
+                    Un Plan de Mejoramiento es el resultado de un conjunto de procedimientos, acciones y metas diseñadas y orientadas de manera planeada, organizada y sistemática desde las instituciones.
+                </p>
+                <br>
+                <br>
+                <br>
+                
+                <a href="#services" class="bt_servicios">Ver mas</a>
+            </article>
+            
+        </section>
+        <!-- fin sección de servicios -->
+
+
+
+        <h1 id="news">Tus Asignaturas</h1>
+        <!-- inicio sección de noticias -->
+        <section  class="seccion-noticias">
+
+            <article class="news-info">
+                <div class="news-header">
+                    <img class="news-info__imagen" src="./matematicas.png" alt="" width="200" height="200">
+                    <h2 class="news-info__title">Matematicas</h2>
+                </div>
+                <p class="news-info__text">
+                    Es la ciencia de la estructura, el orden y la relación que ha evolucionado a partir de prácticas elementales de contar, medir y describir las formas de los objetos. Se ocupa del razonamiento lógico y el cálculo cuantitativo, y su desarrollo ha implicado un grado creciente de idealización y abstracción de su tema.
+                </p>
+                <a class="bt_noticias" href="https://delphipages.live/ciencias/matematicas/mathematics">Seguir leyendo</a>
+            </article>
+
+            <article class="news-info">
+                <div class="news-header">
+                    <img class="news-info__imagen" src="./quimica.png" alt="" width="200" height="200">
+                    <h2 class="news-info__title">Quimica</h2>
+                </div>
+                <p class="news-info__text">
+                    Es el estudio de la materia , definida como todo aquello que tiene masa y ocupa espacio, y los cambios que puede sufrir la materia cuando está sujeta a diferentes entornos y condiciones. La química busca comprender no solo las propiedades de la materia, como la masa o composición de un elemento químico y por qué la materia sufre ciertos cambios.
+                </p>
+                <a class="bt_noticias" href="https://app.dems.ipn.mx/guia/sistema/contenido/QU%C3%8DMICA.html">Seguir leyendo</a>
+            </article>
+
+            <article class="news-info">
+                <div class="news-header">
+                    <img class="news-info__imagen" src="./español.png" alt="" width="200" height="200">
+                    <h2 class="news-info__title">Español</h2>
+                </div>
+                <p class="news-info__text">
+                    El español es una lengua viva que ha evolucionado con el tiempo y se ha adaptado a su uso en cada país en el que se habla, habiendo sido llevado a muchos lugares diferentes del mundo gracias a la expansión del imperio español y los lugares en los que los conquistadores y exploradores dejaron asentamientos detrás de ellos a su paso. El español se habla tanto en España como en América, y la variedad que se habla en cada región tiene su propia riqueza especial que hace que estudiar español sea una experiencia única en la que cada día se hacen nuevos descubrimientos.
+                </p>
+                <a class="bt_noticias" href="https://www.enforex.com/language/spanish.html">Seguir leyendo</a>
+            </article>
+
+            <article class="news-info">
+                <div class="news-header">
+                    <img class="news-info__imagen" src="./musica.png" alt="" width="200" height="200">
+                    <h2 class="news-info__title">Musica</h2>
+                </div>
+                <p class="news-info__text">
+                    La música es una colección de sonidos o sonidos coordinados. Hacer música es el proceso de poner sonidos y tonos en un orden, a menudo combinándolos para crear una composición unificada. Las personas que hacen música organizan los sonidos de forma creativa para obtener el resultado deseado, como una sinfonía de Beethoven. La música está hecha de sonidos, vibraciones y momentos de silencio y se puede utilizar para transmitir una amplia gama de experiencias, entornos y emociones.
+                </p>
+                <a class="bt_noticias" href="https://significado.online/musica/">Seguir leyendo</a>
+            </article>
+
+        </section>
+        <!-- fin sección de noticias -->
+
+
+        <h1 id="team" >Equipo</h1>
+        <!-- inicio sección de equipo -->
+        <section  class="seccion-equipo">
+
+            <article class="team-info1">
+                <img class="team-info__imagen" src="./jassanarteta.jpg" alt="" width="100" height="100">
+                <h2 class="team-info__title">Jassan Arteta</h2>
+                <p class="team-info__text">
+                    Ingeniero Químico,Universidad del Atlántico, Docente en ciencias básicas, 45 años y me gusta salir a trotar, actualmente estudiante programación UTP. 
+                </p>
+            </article>
+
+            <article class="team-info2">
+                <img class="team-info__imagen" src="./alejandropaneso.jpg" alt="" width="100" height="100">
+                <h2 class="team-info__title">Alejandro Paneso</h2>
+                <p class="team-info__text">
+                    Estudiante en misión TIC 2022, 20 años, Técnico en Talento humano. 
+                </p>
+            </article>
+
+            <article class="team-info1">
+                <img class="team-info__imagen" src="./richardvillalba.jpg" alt="" width="100" height="100">
+                <h2 class="team-info__title">Richard Villalba</h2>
+                <p class="team-info__text">
+                    Ingeniero de Sistemas, Universidad de Cordoba , Ingeniero Soporte, 30 años y me gusta jugar futbol, actualmente estudiante programación UTP.
+                </p>
+            </article>
+
+            <article class="team-info2">
+                <img class="team-info__imagen" src="./oscarorozco.jpg" alt="" width="100" height="100">
+                <h2 class="team-info__title">Oscar Orozco</h2>
+                <p class="team-info__text">
+                    Universidad Nacional Abierta y a Distancia Ingeniería en sistemas, 29 años, me gustan los videojuegos, actualmente estudiante programación UTP. 
+                </p>
+            </article>
+
+            <article class="team-info1">
+                <img class="team-info__imagen" src="./user.png" alt="" width="100" height="100">
+                <h2 class="team-info__title">Daniel Rodríguez</h2>
+                <p class="team-info__text">
+                    Estudiante de programación UTP en misión tic 2022 , 17 Años , me gustan los videojuegos y jugar fútbol.
+                </p>
+            </article>
+
+        </section>
+        <!-- fin sección de equipo -->
+
+    </div>
+    <!-- fin contenido principal -->
+
+    <!-- Inicio pie del sitio -->
+    <div class="seccion-pie">
+        <br>
+        <article>
+            <p>En un mundo competitivo como el de hoy, es de vital importancia el uso adecuado de las herramientas tecnologicas, </p>
+            <p>que soporten la gestion de actividades entre profesores, estudiantes y padres de familia, Hive es una plataforma </p>
+            <p>académica que responde las  necesidades academicas de nuestro entorno.</p>
+            <br>
+            <h4>Contacto</h4>
+            <p>https://github.com/jassan-bit/Grupo-32-8/settings/access  <br> mail: profejassan@gmail.com   <br>      Cel: 3013730834</p>
+           
+            
+        </article>
+        <article>
+            <p>Jassan Arteta, Rol: Organizar, Planificar, Evaluar y Dirigir.</p>
+            <p>Alejandro Paneso,  Rol: Programar, Diseñar, Evaluar y Publicar.</p>
+            <p>Richard Villalba,  Rol: Programar, Planificar,Redactar, y Optimizar.</p>
+            <p>Oscar Orozco, Rol: Diseñar, Mejorar, Actualizar y Retroalimentar.</p>
+            <p>Daniel Rodríguez, Rol: Redactar, Evaluar, Apoyar y Optimizar.</p>
+        </article>
+        <br>
+        <br>
+    </div>
+    <!-- fin pie del sitio -->
+
+</body>
+
+</html>
